@@ -12,3 +12,4 @@ export const searchProducts = async (params) => {
     console.log("API Error", err);
   }
 };
+
