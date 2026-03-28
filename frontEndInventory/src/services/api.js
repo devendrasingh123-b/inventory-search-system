@@ -4,7 +4,7 @@ export const searchProducts = async (params) => {
     // console.log(params)
     const query = new URLSearchParams(params).toString();
     // console.log(query)
-    const res = await fetch(`http://localhost:3000/search?${query}`);
+    const res = await fetch(`https://inventory-search-system-1.onrender.com/search?${query}`);
     const data = await res.json();
 
     return data;

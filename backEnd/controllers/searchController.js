@@ -3,12 +3,12 @@ const Inventory = require("../models/Inventory");
 const searchInventory = async (req, res) => {
   try {
     const { q, category, minPrice, maxPrice } = req.query;
-    // console.log(q,category,minPrice,maxPrice)
+    console.log(q,category,minPrice,maxPrice)
 
     // 👉 पहले सारा data ले आओ (simple approach)
     let data = await Inventory.find();
 
-    // console.log(data)
+    console.log(data)
 
     // 👉 name filter
     if (q) {
